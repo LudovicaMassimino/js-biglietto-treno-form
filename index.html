@@ -9,25 +9,27 @@
 <body>
     <section class="py-5">
         <div class="container">
+            <h1 class="mb-5 text-center">Calcola il prezzo del tuo biglietto</h1>
             <div class="row">
                 <div class="col">
-                    <div class="mb-3">
-                        <label for="km">Quanti km vuoi percorrere?</label>
-                        <input type="text" class="form-control" id="km" placeholder="Inserisci il numero di km che vuoi percorrere">
-                    </div>
-                    <div class="mb-3">
-                        <label for="age">Quanti anni hai?</label>
-                        <input type="text" class="form-control" id="age" placeholder="Inserisci la tua età">
-                    </div>
-                    <div>
-                        <button id="submit" class="btn btn-primary">Calcola il prezzo</button>
+                    <div class="card border rounded p-3">
+                        <div class="mb-3">
+                            <label for="km" class="form-label">Quanti km vuoi percorrere?</label>
+                            <input type="text" class="form-control" id="km" placeholder="Inserisci il numero di km che vuoi percorrere">
+                        </div>
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Quanti anni hai?</label>
+                            <input type="text" class="form-control" id="age" placeholder="Inserisci la tua età">
+                        </div>
+                        <div>
+                            <button id="submit" class="btn btn-primary mt-2">Calcola il prezzo</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="mb-3">Il tuo biglietto costerà:
-                        <div class="card">
-                            <div id="price" class="card-body"></div>
-                        </div>
+                    <div class="card border rounded p-3 d-flex flex-column justify-content text-center">
+                        <div class="mb-3">Il tuo biglietto costerà:</div>
+                        <div id="price" class="card-body"></div>
                     </div>
                 </div>
             </div>
